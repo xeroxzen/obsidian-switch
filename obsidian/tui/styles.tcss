@@ -1,0 +1,109 @@
+/* OBSIDIAN-SWITCH TUI stylesheet */
+
+Screen {
+    background: #080a0e;
+    color: #d8dee9;
+}
+
+#top-classification-bar {
+    dock: top;
+    height: 1;
+    background: #141923;
+    color: #ffb000;
+    text-style: bold;
+    content-align: center middle;
+}
+
+#hud-bar {
+    height: 5;
+    margin: 0 1;
+    layout: horizontal;
+}
+
+.hud-card {
+    width: 1fr;
+    height: 5;
+    background: #0d1117;
+    border: heavy #1f2937;
+    padding: 0 1;
+    content-align: left middle;
+}
+
+#control-bar {
+    height: 3;
+    margin: 0 1;
+    background: #0d1117;
+    border: solid #1f2937;
+    layout: horizontal;
+    align: center middle;
+}
+
+.tactical-btn {
+    margin: 0 1;
+    min-width: 20;
+    height: 1;
+    border: none;
+    background: #161f2c;
+    color: #00d4ff;
+    text-style: bold;
+}
+
+.tactical-btn:hover {
+    background: #ffb000;
+    color: #080a0e;
+}
+
+#ledger-container {
+    height: 11;
+    margin: 0 1;
+    background: #0b0e14;
+    border: heavy #1f2937;
+}
+
+.pane-title {
+    height: 1;
+    background: #141b26;
+    color: #00d4ff;
+    text-style: bold;
+    padding: 0 1;
+}
+
+DataTable {
+    height: 1fr;
+    background: #0b0e14;
+    color: #e5e9f0;
+}
+
+DataTable > .datatable--header {
+    background: #161f2c;
+    color: #ffb000;
+    text-style: bold;
+}
+
+#dual-log-container {
+    height: 1fr;
+    margin: 0 1;
+    layout: horizontal;
+}
+
+.log-pane {
+    width: 1fr;
+    height: 1fr;
+    background: #0b0e14;
+    border: heavy #1f2937;
+}
+
+RichLog {
+    height: 1fr;
+    background: #080a0e;
+    padding: 0 1;
+}
+
+#status-strip {
+    dock: bottom;
+    height: 1;
+    background: #111620;
+    color: #8892b0;
+    padding: 0 1;
+}
+

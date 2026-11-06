@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+# Generated reports can contain results for real domains. Never commit them.
+reports/
+# Stale pip freeze with local paths; uv.lock is the lockfile.
+requirements.txt
