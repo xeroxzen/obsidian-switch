@@ -690,10 +690,10 @@ dev = [
 requires-dist = [
     { name = "fastapi", specifier = ">=0.110.0" },
     { name = "httpx", specifier = ">=0.27.0" },
-    { name = "oppwa-guard", git = "https://github.com/xeroxzen/oppwa-guard" },
+    { name = "oppwa-guard", specifier = ">=0.1.0" },
     { name = "pydantic", specifier = ">=2.7.0" },
     { name = "rich", specifier = ">=13.7.0" },
-    { name = "spoofscore", git = "https://github.com/xeroxzen/spoofscore" },
+    { name = "spoofscore", specifier = ">=0.1.0" },
     { name = "textual", specifier = ">=0.70.0" },
 ]
 
@@ -719,9 +719,13 @@ wheels = [
 [[package]]
 name = "oppwa-guard"
 version = "0.1.0"
-source = { git = "https://github.com/xeroxzen/oppwa-guard#5c1d1322e48457e16221d5e456cbcdae6ca1b359" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cryptography" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/fe/5d/44f944086ee9108ff530aa93733f989659dc927aba3c236b17ae71e31a11/oppwa_guard-0.1.0.tar.gz", hash = "sha256:ae7ae5dab11a67cad49b16d8579e69815cdab649c82ded11e2f2b476934bd0d3", size = 72677, upload-time = "2026-11-20T17:29:42.02Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/86/ff/7629171747aead395dff9b5c8e6a779ae6c60d9652051d67f340ff4047de/oppwa_guard-0.1.0-py3-none-any.whl", hash = "sha256:4d9cfebf9c6e2af8a4d25ce69928f11a51868411a7a7a07050ea1307e5aa5823", size = 9706, upload-time = "2026-11-20T17:29:41.216Z" },
 ]
 
 [[package]]
@@ -1035,10 +1039,14 @@ wheels = [
 [[package]]
 name = "spoofscore"
 version = "0.1.0"
-source = { git = "https://github.com/xeroxzen/spoofscore#44e388010b656323725dad16fc6655ad85bfc1e3" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "dnspython", version = "2.8.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "dnspython", version = "2.9.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/73/6f/823751f2e9bd903f881a9e03ac0148c3a4bae306ec32fb6063ded4a37c5f/spoofscore-0.1.0.tar.gz", hash = "sha256:dad51309b442d3f686437b163e7e0abe2a7f600076eff4a985ee8ef6fb0f169e", size = 62876, upload-time = "2026-11-20T17:29:43.498Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/67/4b/2e4a42a9509c636ab0b2df7d70581347f04689ac0eabaf4058e70c120fae/spoofscore-0.1.0-py3-none-any.whl", hash = "sha256:e02c0414c7e9e44e3f056ac266b6f0d0c443ce4de624ed49425200bd441418e9", size = 8904, upload-time = "2026-11-20T17:29:42.735Z" },
 ]
 
 [[package]]

@@ -14,8 +14,8 @@ dependencies = [
     "fastapi>=0.110.0",
     "httpx>=0.27.0",
     "pydantic>=2.7.0",
-    "oppwa-guard",
-    "spoofscore",
+    "oppwa-guard>=0.1.0",
+    "spoofscore>=0.1.0",
 ]
 
 [project.scripts]
@@ -26,10 +26,6 @@ include = ["obsidian*"]
 
 [tool.setuptools.package-data]
 "obsidian.tui" = ["*.tcss"]
-
-[tool.uv.sources]
-oppwa-guard = { git = "https://github.com/xeroxzen/oppwa-guard" }
-spoofscore = { git = "https://github.com/xeroxzen/spoofscore" }
 
 [dependency-groups]
 dev = ["pytest>=8", "mypy>=1.10", "ruff>=0.5"]
